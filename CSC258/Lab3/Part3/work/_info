@@ -1,0 +1,95 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u4/c7/05/chenkey8/Desktop/CSC258/Lab3/Part3
+vALU
+Z1 !s110 1559317139
+!i10b 1
+!s100 [NnPYgFh93;C;[Ve=9VKM1
+I_g>^116Ek^3]WRiGHlk8[0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1559315903
+Z4 8ALU.v
+Z5 FALU.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1559317139.000000
+Z8 !s107 ALU.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|ALU.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+n@a@l@u
+vfulladder
+R1
+!i10b 1
+!s100 5DQ[7JS`c8Jna5M]OnV2Q2
+I_=k[OCD?OeNdEKH64o:Fz2
+R2
+R0
+R3
+R4
+R5
+L0 168
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vripplecarrier
+R1
+!i10b 1
+!s100 3Y2RUX<2BDUBDT;A17S;53
+Id8`h5bm5CkgzN[Y2jLV1i2
+R2
+R0
+R3
+R4
+R5
+L0 127
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsevesegments
+R1
+!i10b 1
+!s100 ez;0b;`TBg116S6;hd:NB3
+IXODRnN^lan9V:Vb8c9Uei1
+R2
+R0
+R3
+R4
+R5
+L0 89
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

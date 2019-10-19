@@ -1,0 +1,298 @@
+module lab4_part2_1(HEX5, HEX4, HEX0, LEDR, SW, KEY);
+    input[9:0] SW;
+	 input[0:0] KEY;
+	 
+	 output [7:0] LEDR;
+	 output [2:0] HEX0, HEX4, HEX5;
+	 
+	 wire [7:0] aluout;
+
+
+	 ripplecarry r1(
+    .SW({SW[7:4],4'b0001}),
+	 .LEDR(adderresult1)
+	 );
+	 
+	 ripplecarry r2(
+    .SW(SW[7:0]),
+	 .LEDR(adderresult2)
+	 );
+
+	 alu alu1(
+	 .AB({SW[3:0],q[3:0]}),
+	 .Func(SW[7:5]),
+	 .ALUOut(aluout[7:0])
+	 );
+	 
+	 
+	reg[7:0] q;
+
+	always @(posedge KEY[0])
+	begin
+	if(SW[9] == 1'b0)
+		q <= 8'b00000000;
+	else
+		q <= aluout[7:0];
+	end
+	assign LEDR[7:0] = aluout[7:0];
+
+
+	hexdisplay hex0(
+	 .SW(SW[7:4]),
+	 .HEX0(HEX0)
+	 );  
+	
+	hexdisplay hex5(
+	 .SW(LEDR[7:4]),
+	 .HEX0(HEX5)
+	 );  
+	
+	hexdisplay hex4(
+	 .SW(SW[3:0]),
+	 .HEX0(HEX4)
+	 );  
+endmodule
+	
+module alu(AB, Func, ALUOut);
+input[7:0] AB;
+input[2:0] Func;
+output [7:0] ALUOut;
+wire [4:0]adderresult1;
+wire[4:0]adderresult2;
+	 
+
+	 ripplecarry r1(
+    .SW({AB[7:4],4'b0001}),
+	 .LEDR(adderresult1)
+	 );
+	 
+	 ripplecarry r2(
+    .SW(AB[7:0]),
+	 .LEDR(adderresult2)
+	 );
+
+reg [7:0] ALUOut;
+
+    always @(*)
+    begin
+        case(Func[2:0])
+	        3'b000: begin
+			          ALUOut[4:0] = adderresult1;
+			          ALUOut[7:5] = 3'b000;
+						 end
+	        3'b001: begin
+			          ALUOut[4:0] = adderresult2;
+			          ALUOut[7:5] = 3'b000;
+						 end
+	        3'b010: begin
+			          ALUOut[4:0] = AB[7:4] + AB[3:0];		         
+			          ALUOut[7:5] = 3'b000;
+						 end
+	        3'b011: begin
+			          ALUOut[7] = AB[7] | AB[3];
+			          ALUOut[6] = AB[6] | AB[2];
+						 ALUOut[5] = AB[5] | AB[1];
+						 ALUOut[4] = AB[4] | AB[0];
+						 ALUOut[3] = AB[3] ^ AB[7];
+						 ALUOut[2] = AB[2] ^ AB[6];
+						 ALUOut[1] = AB[1] ^ AB[5];
+						 ALUOut[0] = AB[0] ^ AB[4];
+						 end
+	        3'b100: begin
+			          ALUOut[7:1] = 7'b0000000;
+						 ALUOut[0] = |AB[7:0];
+						 end
+	        3'b101: begin
+			          ALUOut[7:0] = AB[3:0] << AB[7:4];
+						 end
+			  3'b110: begin
+			          ALUOut[7:0] = AB[3:0] >> AB[7:4];
+						 end
+			  3'b111: begin
+			          ALUOut[7:0] = AB[3:0] * AB[7:4];
+						 end					 
+	        default: ALUOut[7:0] = 8'b00000000;
+	     endcase
+     end
+endmodule
+
+
+module ripplecarry(SW, LEDR);
+    input[7:0] SW;
+	 output [4:0] LEDR;
+	 wire c0,c1,c2;
+	 
+	 fulladder fa0(
+	 .cin(0),
+	 .a(SW[4]),
+	 .b(SW[0]),
+	 .cout(c0),
+	 .s(LEDR[0])
+    );
+	 
+	 
+	 fulladder fa1(
+	 .cin(c0),
+	 .a(SW[5]),
+	 .b(SW[1]),
+	 .cout(c1),
+	 .s(LEDR[1])
+    );
+	 
+	 
+	 fulladder fa2(
+	 .cin(c1),
+	 .a(SW[6]),
+	 .b(SW[2]),
+	 .cout(c2),
+	 .s(LEDR[2])
+    );
+	 
+	 
+	 fulladder fa3(
+	 .cin(c2),
+	 .a(SW[7]),
+	 .b(SW[3]),
+	 .cout(LEDR[4]),
+	 .s(LEDR[3])
+    );
+	
+endmodule
+
+module fulladder(a,b,cin,cout,s);
+    input a;
+	 input b;
+	 input cin;
+	 output cout;
+	 output s;
+	 
+	 assign s = (~cin & ~a & b) | (~cin & a & ~b) | (cin & ~a & ~b) | (cin & a & b) ;
+	 assign cout = (cin & a) | (b & a) | (cin & b);
+
+endmodule
+
+module hexdisplay(
+SW,HEX0);
+   input [3:0] SW;
+	output [6:0] HEX0;
+	
+	zero m1(
+	.a(SW[3]),
+	.b(SW[2]),
+	.c(SW[1]),
+	.d(SW[0]),
+	.m(HEX0[6])
+	);
+	one m2(
+	.a(SW[3]),
+	.b(SW[2]),
+	.c(SW[1]),
+	.d(SW[0]),
+	.m(HEX0[5])
+	);
+	two m3(
+	.a(SW[3]),
+	.b(SW[2]),
+	.c(SW[1]),
+	.d(SW[0]),
+	.m(HEX0[4])
+	);
+	three m4(
+	.a(SW[3]),
+	.b(SW[2]),
+	.c(SW[1]),
+	.d(SW[0]),
+	.m(HEX0[3])
+	);
+	four m5(
+	.a(SW[3]),
+	.b(SW[2]),
+	.c(SW[1]),
+	.d(SW[0]),
+	.m(HEX0[2])
+	);
+	five m6(
+	.a(SW[3]),
+	.b(SW[2]),
+	.c(SW[1]),
+	.d(SW[0]),
+	.m(HEX0[1])
+	);
+	six m7(
+	.a(SW[3]),
+	.b(SW[2]),
+	.c(SW[1]),
+	.d(SW[0]),
+	.m(HEX0[0])
+	);
+endmodule
+
+module zero(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = (c & ~d) | (~a & c) | (b & c) | (~b & ~d) | (a & ~b & ~c) | (~a & b & d) | (a & ~c & ~d);
+endmodule
+
+module one(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = (~b & ~d) | (~a & ~b) | (~a & ~c & ~d) | (~a & c & d) | (a & ~c & d);
+endmodule
+
+module two(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = (~a & ~c) | (~a & d) | (~a & b) | (a & ~b) | (~c & d);
+endmodule
+
+module three(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = (~a & ~b & ~d) | (~a & ~b & c) | (b & ~c & d) | (b & c & ~d) | (a & ~c & ~d) | (~b & c & d);
+endmodule
+
+module four(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+
+   assign m = (~b & ~d) | (a & b) | (c & ~d) | (a & c);
+endmodule
+
+module five(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = (~c & ~d) | (a & ~b) | (a & c) | (~a & b & ~c) | (b & c & ~d);
+endmodule
+
+module six(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
+	
+	assign m = (a & ~b) | (c & ~d) | (a & d) | (~a & ~b & c) | (~a & b & ~c);
+endmodule

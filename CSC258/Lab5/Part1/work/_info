@@ -1,0 +1,95 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u4/c7/05/chenkey8/Desktop/CSC258/Lab5/Part1
+veightbitcounter
+Z1 !s110 1560569585
+!i10b 1
+!s100 =ReOMeR<La?`:iY^nZFc_3
+IZ;nb0dA4=dc=O2H_l[9dn2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1560569351
+Z4 8eightbitcounter.v
+Z5 Feightbitcounter.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1560569585.000000
+Z8 !s107 eightbitcounter.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|eightbitcounter.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+vfourbitcounter
+!s110 1560568924
+!i10b 1
+!s100 Mkhfbi@=>Hg9lQ7O505zB0
+I7lL5gKU<2LAU3dE]XOZL63
+R2
+R0
+w1560568900
+8fourbitcounter.v
+Ffourbitcounter.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1560568924.000000
+!s107 fourbitcounter.v|
+!s90 -reportprogress|300|-timescale|1ns/1ns|fourbitcounter.v|
+!i113 1
+R10
+R11
+vMyTFF
+R1
+!i10b 1
+!s100 [@fRKzg12zVV7EJbbT28<0
+Inic][OEkFGOM0hkboW<QG1
+R2
+R0
+R3
+R4
+R5
+L0 88
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@my@t@f@f
+vsevesegments
+R1
+!i10b 1
+!s100 ;HY?Qd=;9X2dCLajT2SBV0
+ISQSR>iYF51]I8;P01fzSG3
+R2
+R0
+R3
+R4
+R5
+L0 102
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

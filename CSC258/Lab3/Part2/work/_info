@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u4/c7/05/chenkey8/Desktop/CSC258/Lab3/Part2
+vfulladder
+!s110 1559255949
+!i10b 1
+!s100 bPkF2XckDImG34j90791Z2
+I:1@SYMHQz`b4`AeYjMH]72
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z2 w1559255598
+Z3 8ripplecarrier.v
+Z4 Fripplecarrier.v
+L0 42
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1559255947.000000
+Z7 !s107 ripplecarrier.v|
+Z8 !s90 -reportprogress|300|-timescale|1ns/1ns|ripplecarrier.v|
+!i113 1
+Z9 o-timescale 1ns/1ns
+Z10 tCvgOpt 0
+vripplecarrier
+!s110 1559255948
+!i10b 1
+!s100 j6OAFH<R?828ge5H]hFnC3
+I2WUBBWfA^oL1cmkDJg7:]0
+R1
+R0
+R2
+R3
+R4
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10

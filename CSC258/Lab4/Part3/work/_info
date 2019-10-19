@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u4/c7/05/chenkey8/Desktop/CSC258/Lab4/Part3
+vflipflop
+Z1 !s110 1559936834
+!i10b 1
+!s100 CXY6:A7[SL^7L2KP85n3P1
+IU5L9AZl1gzXzXWI`8F2FP3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1559936787
+Z4 8shifter.v
+Z5 Fshifter.v
+L0 125
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1559936833.000000
+Z8 !s107 shifter.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|shifter.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+vmux2to1
+R1
+!i10b 1
+!s100 feh@;;P67ecWh7R@=TFej0
+I69UC<Q2_>5^chn`LH5ROO1
+R2
+R0
+R3
+R4
+R5
+L0 139
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vshifter
+Z12 !s110 1559936833
+!i10b 1
+!s100 bZVP>@kC:MiK>gic_?VT61
+IPDJ``abJ=Z]I5jl24>J7c3
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vshifter_bit
+R12
+!i10b 1
+!s100 bffCdUf?ibGCXamT87d;C3
+I<]]G6o;ROTlCkCQnf>1U[0
+R2
+R0
+R3
+R4
+R5
+L0 98
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u4/c7/05/chenkey8/Desktop/CSC258/Lab2/Part3_a
+vsevesegments
+!s110 1558828034
+!i10b 1
+!s100 ]A4[`@HAec@XeYjZEIF6Y3
+IQ^W;JSAjAGSZ1jD3QOHS61
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1558828026
+8sevesegments.v
+Fsevesegments.v
+L0 1
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1558828034.000000
+!s107 sevesegments.v|
+!s90 -reportprogress|300|-timescale|1ns/1ns|sevesegments.v|
+!i113 1
+o-timescale 1ns/1ns
+tCvgOpt 0

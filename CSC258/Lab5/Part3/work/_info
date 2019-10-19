@@ -1,0 +1,74 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u4/c7/05/chenkey8/Desktop/CSC258/Lab5/Part3
+vPart3
+Z1 !s110 1560726730
+!i10b 1
+!s100 jbBZHI4IkeXP;kZ]c5H1e0
+IV@3GEO]Rg@g7e2cQb1Gk;3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1560726517
+Z4 8Part3.v
+Z5 FPart3.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1560726730.000000
+Z8 !s107 Part3.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|Part3.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+n@part3
+vratedivider
+R1
+!i10b 1
+!s100 lW>LPW5Wf:jk3?:3_iPE90
+IkM2j2hli?fTEA9[>Eg7JQ1
+R2
+R0
+R3
+R4
+R5
+L0 64
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vshifter_bit
+R1
+!i10b 1
+!s100 iZ3`7F1:jKBJ58ok>`9E_2
+I:_4]UV?af<nZ`H7ZD;^Xm0
+R2
+R0
+R3
+R4
+R5
+L0 82
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

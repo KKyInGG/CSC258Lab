@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u4/c7/05/chenkey8/Desktop/CSC258/Lab2/Part2
+vmux2to1
+!s110 1558825021
+!i10b 1
+!s100 8fdf1FGkkf@nDiOjjXb0L1
+Iz<2h<onL^HbdhLnlOQSfn1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z2 w1558825003
+Z3 8muxs.v
+Z4 Fmuxs.v
+L0 46
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1558825020.000000
+Z7 !s107 muxs.v|
+Z8 !s90 -reportprogress|300|-timescale|1ns/1ns|muxs.v|
+!i113 1
+Z9 o-timescale 1ns/1ns
+Z10 tCvgOpt 0
+vmux4to1
+Z11 !s110 1558825020
+!i10b 1
+!s100 ?X7EVE[N:4XY;Zh59N>[?1
+I1iE8YJEK`Z3ddf43@@8ed2
+R1
+R0
+R2
+R3
+R4
+L0 17
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vmuxs
+R11
+!i10b 1
+!s100 V68@UMdfW8e[39bCke^f<1
+I[f4E0Ef1;FF_Wa7fRLnQ[0
+R1
+R0
+R2
+R3
+R4
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10

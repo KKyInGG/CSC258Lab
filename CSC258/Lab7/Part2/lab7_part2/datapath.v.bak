@@ -1,0 +1,21 @@
+module datapath (colour, clk, loc_in, en_x, r_set, sx, sy, );
+		input [6:0] loc_in;
+		output reg [7:0] sx;
+		output reg [6:0]sy;
+		input [2:0] colour;
+		input clk,r_set;
+		input en_x;
+		
+		always @(posedge,r_set)
+			begin
+				if(!r_set)
+					begin
+						sx <= 8'd0;
+						sy <= 7'd0;
+						colour <= 3'd0;
+						loc_in <= 6'd0;
+					end
+            else
+               if(en_x)
+						sx <= {1'b0, loc_in}
+					

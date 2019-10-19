@@ -1,0 +1,95 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u4/c7/05/chenkey8/Desktop/CSC258/Lab5/Part2
+vdisplaycounter
+Z1 !s110 1560722205
+!i10b 1
+!s100 aZV5`06D@W?l?;IBO?^]I1
+I21d?zdam_c0VB;z^Waiz83
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1560721575
+Z4 8Part2.v
+Z5 FPart2.v
+L0 72
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1560722204.000000
+Z8 !s107 Part2.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|Part2.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+vPart2
+R1
+!i10b 1
+!s100 dHfC_4`<<l;6U0]<MXboT2
+ITG7_Wo[B4i9PYY`Cf>HQH3
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@part2
+vratedivider
+R1
+!i10b 1
+!s100 beH0n:6Ga`JXzDIcf<U6:0
+IokjFa6BdQP[F42cm^oBWJ0
+R2
+R0
+R3
+R4
+R5
+L0 94
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsevesegments
+R1
+!i10b 1
+!s100 d[WK`gfPC:oDDMf<TG9ag2
+IcOPC[m:0Sn4GRQ@OWzTkl0
+R2
+R0
+R3
+R4
+R5
+L0 112
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

@@ -1,0 +1,8 @@
+module ripplecarrier(LED,SW);
+endmodule
+
+module fulladder(a,b,ci,s,c0);
+	input a,b,ci;
+	output s,c0;
+	assign 
+endmodule

@@ -1,0 +1,37 @@
+module Part2()
+
+always @(*)
+	begin
+		case(SW[1:0])
+			2'b00: speed = 26'b10111110101111000001111111;
+			2'b01:
+			2'b10:
+			2'b11:
+
+			default: LEDR[0] = 0;
+		endcase
+	end
+endmodule
+
+
+module ratedivider(d,clk,rset,par,en,q)
+		input d[25:0]
+		input clk,rset,par,en;
+		output q[25:0];
+		always @(posedge clk)
+		begin
+			if(rset == 1'b0)
+				q <= 26'b00000000000000000000000000;
+			else if (par == 1'b1)
+				q <= d;
+			else if (en == 1'b1)
+				begin 
+					if(q == 26'b00000000000000000000000000)
+						q <= d;
+					else
+						q <= q - 1'b1;
+		
+endmodule
+
+module
+endmodule

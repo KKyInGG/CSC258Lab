@@ -1,0 +1,19 @@
+module fourbitcounter(SW,LEDR);
+	input SW[9:0];
+	output LEDR[9:0];
+	always @(posedge 
+	
+module MyTFF(
+module flipflop(d,clock,reset_n,q);
+	input d,clock,reset_n;
+	reg q0;
+	output q;
+	always @(posedge clock)
+		begin
+			if(reset_n == 1'b0)
+				q0 <= 0;
+			else
+				q0 <= d;
+		end
+	assign q = q0;
+endmodule
